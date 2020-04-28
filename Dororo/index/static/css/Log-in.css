@@ -1,0 +1,22 @@
+.u-section-1 {background-image: linear-gradient(0deg, rgb(0, 0, 0), rgb(0, 0, 0)), url("images/Prision1.jpg")}
+.u-section-1 .u-sheet-1 {min-height: 602px}
+.u-section-1 .u-form-1 {height: 253px; width: 555px; margin: 265px auto 60px}
+.u-section-1 .u-input-1 {font-size: 1.25rem}
+.u-section-1 .u-form-group-2 {margin-top: 0; margin-bottom: 0}
+.u-section-1 .u-input-2 {font-size: 1.25rem}
+.u-section-1 .u-form-group-3 {margin-top: 0; margin-bottom: 0}
+.u-section-1 .u-btn-1 {border-style: solid} 
+
+@media (max-width: 1199px){ .u-section-1 .u-sheet-1 {min-height: 496px} }
+
+@media (max-width: 991px){ .u-section-1 .u-sheet-1 {min-height: 380px} }
+
+@media (max-width: 767px){ .u-section-1 .u-sheet-1 {min-height: 285px}
+.u-section-1 .u-form-1 {width: 540px} }
+
+@media (max-width: 575px){ .u-section-1 .u-sheet-1 {min-height: 179px}
+.u-section-1 .u-form-1 {width: 340px} }
+
+.form-group input{
+    color:black;
+}

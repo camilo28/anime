@@ -1,0 +1,36 @@
+from django.urls import path
+from anime.views import DemonioView,ParteView,CiudadView,DemonioInsert,ParteInsert,CiudadInsert,PersonajeView,demonio_print,PersonajeInsert,ArticuloView,ArticuloInsert,ResultadoPeleaInsert,ResultadoPeleaView,PeleaInsert,PeleaView,DemonioEdit,ParteEdit,CiudadEdit,PersonajeEdit,ArticuloEdit,ResultadoPeleaEdit,PeleaEdit,DemonioDelete,ParteDelete,CiudadDelete,PersonajeDelete,ArticuloDelete,ResultadoPeleaDelete,PeleaDelete
+
+urlpatterns = [
+ path('anime/demonio', DemonioView.as_view(), name='listar_demonio'),
+ path('anime/parte',ParteView.as_view(), name='listar_parte'),
+ path('anime/ciudad',CiudadView.as_view(), name='listar_ciudad'),
+ path('anime/personaje',PersonajeView.as_view(),name='listar_personaje'),
+ path('anime/articulo',ArticuloView.as_view(),name='listar_articulo'),
+ path('anime/resultado',ResultadoPeleaView.as_view(),name='listar_resultado'),
+ path('anime/pelea',PeleaView.as_view(),name='listar_pelea'),
+ path('anime/insertD', DemonioInsert.as_view(),name='insertar_demonio'),
+ path('anime/insertP',ParteInsert.as_view(),name='insertar_parte'),
+ path('anime/insertC',CiudadInsert.as_view(), name='insertar_ciudad'),
+ path('anime/insertPer',PersonajeInsert.as_view(), name='insertar_personaje'),
+ path('anime/insertAr',ArticuloInsert.as_view(), name='insertar_articulo'),
+ path('anime/insertResul',ResultadoPeleaInsert.as_view(), name='insertar_resultado'),
+ path('anime/insertPelea',PeleaInsert.as_view(), name='insertar_pelea'),
+ path('anime/editarDemonio/<int:pk>',DemonioEdit.as_view(), name='editar_demonio'),
+ path('anime/editarParte/<int:pk>',ParteEdit.as_view(), name='editar_parte'),
+ path('anime/editarCiudad/<int:pk>',CiudadEdit.as_view(), name='editar_ciudad'),
+ path('anime/editarPersonaje/<int:pk>',PersonajeEdit.as_view(), name='editar_personaje'),
+ path('anime/editarArticulo/<int:pk>',ArticuloEdit.as_view(), name='editar_articulo'),
+ path('anime/editarResultadoPelea/<int:pk>',ResultadoPeleaEdit.as_view(), name='editar_resultadopelea'),
+ path('anime/editarPelea/<int:pk>',PeleaEdit.as_view(), name='editar_pelea'),
+ path('anime/eliminarDemonio/<int:pk>',DemonioDelete.as_view(), name='eliminar_demonio'),
+ path('anime/eliminarParte/<int:pk>',ParteDelete.as_view(), name='eliminar_parte'),
+ path('anime/eliminarCiudad/<int:pk>',CiudadDelete.as_view(), name='eliminar_ciudad'),
+ path('anime/eliminarPersonaje/<int:pk>',PersonajeDelete.as_view(), name='eliminar_personaje'),
+ path('anime/eliminarArticulo/<int:pk>',ArticuloDelete.as_view(), name='eliminar_articulo'),
+ path('anime/eliminarResultadoPelea/<int:pk>',ResultadoPeleaDelete.as_view(), name='eliminar_resultadopelea'),
+ path('anime/eliminarPelea/<int:pk>',PeleaDelete.as_view(), name='eliminar_pelea'),
+ path('demonio/print',demonio_print,name='demonio_print'),
+ path('demonio/print/<int:pk>',demonio_print,name='demonio_print_one'),
+ 
+ ]

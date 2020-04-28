@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/anime.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<div>
+    <h1>Ingreso a tu app</h1>
+</div>
+<body>
+    <div class="panel-body" width="200" >
+        <form method="post">
+            {% csrf_token %} <!--Toquén de seguirad para django -->
+        <div class="form-group">
+            <INPUT class="form-control" placeholder="Username" type="text" name="username" id="id_username" autofocus> 
+        </div>
+        <div class="form-group">
+            <INPUT class="form-control" placeholder="Password" type="password" name="password" id="id_password"autofocus> 
+        </div>
+        <button type="submit" class=" btn btn-lg btn-success btn-block" >Login</button>
+        </div>
+</body>
+</html>

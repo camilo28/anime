@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px ;
+}
+form{
+    text-align: left;
+    height: auto;
+    width: 20%;
+    margin: 100px 40%;
+    display: block;
+    border-radius: 10px;
+    padding: 20px;
+    border:1px solid black;
+    background: rgb(54, 6, 6);
+    position: absolute;
+    color: white;
+  }
+  input:focus,textarea:focus{ 
+    border:1px solid #1668c4; 
+}
+input{
+  margin-left: 30px;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 20%;
+  padding: 5px;
+  box-sizing: border-box;
+  border:1px solid black;
+}
+table{
+    position: absolute; 
+    border-collapse: collapse;
+    height: auto;
+    width:15%;
+    margin: 100px 25%;
+    padding: 5px;
+  
+    
+  }
+  table td {
+   
+    padding: 10px 30px;
+    font-family: cursive;
+    background: #ccc;
+    border-radius: 10px;
+    
+  }
+  table th {
+    padding: 10px 30px;
+    font-family: cursive;
+    background: #ccc;
+    border-radius: 10px;
+  }
+  
+  table td:hover {
+  background: rgb(134, 130, 130);
+  color: white;
+  }
+
+ 
+
+#header{
+    background-color: thistle;
+
+    width: 500px;
+    font-family:Arial, Helvetica, sans-serif ; 
+
+}
+body{
+
+    background-image: url("hika.jpg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center 50px;
+   
+   
+}   
+
+.panel-body button[type=submit]{
+    margin-bottom: 0pxM;
+    background: #4a88f4;
+    color: black;
+    border:1px solid #4166a7;
+    padding: 5px 5px;
+    margin: 5px 38%;
+    border-radius: 10px;
+}   
+.panel-body button[type=submit]:hover{
+    
+    background: #1157cf;
+    cursor: pointer;
+}     
+form a{
+    display: block;
+    padding: 10px 10%;
+    color : white;
+}
+ul,ol{
+    list-style: none;
+}
+.nav li a{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    padding: 15px 10px;
+    display: block;
+    
+
+}
+.nav li a:hover{
+    background-color: #434343 ;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover >ul{
+    display: block;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    {% load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/anime.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización De Estados</title>
+</head>
+<body>
+    <div>
+    <h1>Apartado de Actualización</h1>
+    </div>
+    <form method="post">
+        <div class="panel panel-default">   
+            
+            </div>
+            <div class="panel-body">
+                {% csrf_token %}
+                {{ form.as_p }} 
+                
+                <button type="submit" class="btn btn-danger">
+                    <span class="fa fa-save">Guardar</span>
+                </button>
+            
+                <a href="{% url 'anime:listar_resultado' %}" class="btn btn-success"><span class="fa fa-undo"></span>Regresar</a>
+            
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>
